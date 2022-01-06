@@ -143,7 +143,10 @@ img {
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
 }
-
+.data-container {
+  display: flex;
+  justify-content: center;
+}
 .bd-grid {
   display: grid;
   gap: 1.5rem;
@@ -155,7 +158,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color)
+  background-color: var(--body-color);
 }
 
 /*========== NAV ==========*/
@@ -198,7 +201,8 @@ img {
   color: var(--first-color);
 }
 .nav_logo_image {
-  width: min(5vw, 3em);border-radius: 2em;
+  width: min(5vw, 3em);
+  border-radius: 2em;
 }
 .logo-and-name {
   display: flex;
@@ -285,8 +289,9 @@ img {
 }
 
 .home__img {
-  width: 300px;
+  width: min(300px, 90vw);
   justify-self: center;
+  border-radius: 5em;
 }
 
 /*========== BUTTONS ==========*/
@@ -581,5 +586,19 @@ img {
 @media screen and (min-height: 721px) {
   .home__container {
     height: 640px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .button {
+    background: cornflowerblue;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .home__data {
+    display: flex;
+    flex-flow: column;
   }
 }
