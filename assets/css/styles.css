@@ -1,13 +1,15 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-
+/* font-family: 'Caveat', cursive;
+font-family: 'M PLUS 1 Code', sans-serif;
+font-family: 'The Nautigal', cursive;*/
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --first-color: #069c54;
-  --first-color-alt: #048654;
+  --first-color: rgb(90, 203, 207);
+  --first-color-alt: #5f9be4;
   --title-color: #393939;
   --text-color: #707070;
   --text-color-light: #a6a6a6;
@@ -196,7 +198,6 @@ img {
   color: var(--text-color);
   font-weight: var(--font-medium);
 }
-
 .nav__logo:hover {
   color: var(--first-color);
 }
@@ -248,7 +249,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: 0.3rem;
-  background: rgba(6, 156, 84, 0.5);
+  background: var(--first-color);
   border-radius: 0.4rem;
   z-index: var(--z-tooltip);
   transition: 0.4s;
@@ -278,8 +279,9 @@ img {
 
 .home__title {
   font-size: var(--biggest-font-size);
-  color: var(--first-color);
+  color: rgb(101, 212, 216);
   margin-bottom: var(--mb-1);
+  font-family: "The Nautigal", cursive;
 }
 
 .home__subtitle {
@@ -293,7 +295,6 @@ img {
   justify-self: center;
   border-radius: 5em;
 }
-
 /*========== BUTTONS ==========*/
 .button {
   display: inline-block;
@@ -478,6 +479,8 @@ img {
   color: var(--text-color-light);
   margin-top: 3.5rem;
 }
+/*Carousel Items*/
+
 
 /*========== MEDIA QUERIES ==========*/
 @media screen and (min-width: 576px) {
@@ -573,13 +576,19 @@ img {
   }
 
   .home__img {
-    width: 500px;
+    width: 400px;
   }
 
   .about__container,
   .app__container {
     column-gap: 7rem;
   }
+}
+.container {
+  width: 550px;
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative;
 }
 
 /* For tall screens on mobiles y desktop*/
@@ -590,7 +599,6 @@ img {
 }
 @media screen and (max-width: 575px) {
   .button {
-    background: cornflowerblue;
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
     transition: 0.3s;
@@ -600,5 +608,19 @@ img {
   .home__data {
     display: flex;
     flex-flow: column;
+    align-items: center;
+  }
+  .home__subtitle {
+    text-align: center;
+  }
+  .view-button {
+    width: 60%;
+    align-self: center;
+  }
+  .about__description {
+    text-align: left;
+  }
+  .home__title {
+    font-size: 4em;
   }
 }

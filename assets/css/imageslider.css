@@ -1,0 +1,50 @@
+.swiper {
+  width: 30vw;
+  height: 50vh;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 30vw 50vh;
+}
+.swiper-button-prev {
+  
+}
+.swiper-button-next {
+  
+}
+.slide1 {
+  background-image: url(../img/cinnrolls.jpeg);
+}
+.slide2 {
+  background-image: url(../img/flowercake.jpeg);
+}
+.slide3 {
+  background-image: url(../img/leafcake.jpeg);
+}
+.slide4 {
+  background-image: url(../img/mushroomcake.jpeg);
+}
+.slide5 {
+  background-image: url(../img/orangecake.jpeg);
+}
+.slide6 {
+  background-image: url(../img/purplecake.jpeg);
+}
+
+@media screen and (max-width: 575px) {
+  .swiper {
+    width: 70vw;
+    height: 50vh;margin-top: 20px;
+   
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 70vw 50vh;
+  }
+}
