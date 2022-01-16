@@ -340,21 +340,23 @@ img {
 
 .services__content {
   text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 1em;
 }
 
-.services__img {
-  width: 64px;
-  height: 64px;
-  fill: var(--first-color);
-  margin-bottom: var(--mb-2);
-}
 
 .services__title {
   font-size: var(--h3-font-size);
   color: var(--title-color);
   margin-bottom: var(--mb-1);
 }
-
+.svgs {
+  width: 150px;
+  height: 100px;
+}
 .services__description {
   padding: 0 1.5rem;
 }
