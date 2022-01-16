@@ -1,5 +1,5 @@
 .swiper {
-  width: 30vw;
+  width: max(30vw, 250px);
   height: 50vh;
 }
 .swiper-slide {
@@ -7,13 +7,11 @@
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat;
-  background-size: 30vw 50vh;
+  background-size: max(30vw, 250px) 50vh;
 }
 .swiper-button-prev {
-  
 }
 .swiper-button-next {
-  
 }
 .slide1 {
   background-image: url(../img/cinnrolls.jpeg);
@@ -37,8 +35,8 @@
 @media screen and (max-width: 575px) {
   .swiper {
     width: 70vw;
-    height: 50vh;margin-top: 20px;
-   
+    height: 50vh;
+    margin-top: 20px;
   }
   .swiper-slide {
     display: flex;

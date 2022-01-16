@@ -2,10 +2,13 @@ const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
-  effect: "flip",
+  effect: "cube",
+  cubeEffect: {
+    slideShadows: false,
+  },
   grabCursor: true,
   autoplay: {
-    delay: 5000,
+    delay: 10000,
     disableOnInteraction: true,
   },
   // If we need pagination
@@ -15,10 +18,10 @@ const swiper = new Swiper(".swiper", {
   },
 
   // Navigation arrows
-  navigation: {
+  /*navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-  },
+  },*/
 
   // And if we need scrollbar
   scrollbar: {
