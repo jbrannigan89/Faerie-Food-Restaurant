@@ -393,7 +393,7 @@ img{
 .footer{
     &__container{
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        row-gap: 2rem;
+        row-gap: 2rem;background-color: #048654;
     }
     &__logo{
         font-size: var(--h3-font-size);
@@ -441,7 +441,7 @@ img{
         align-items: center;
     }
 
-    .about__data, .about__initial,
+    .about__data,
     .app__data, .app__initial,
     .contact__container, .contact__initial{
         text-align: initial;

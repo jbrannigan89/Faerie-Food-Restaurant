@@ -37,7 +37,7 @@
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== Margenes ==========*/
+  /*========== Margins ==========*/
   --mb-1: 0.5rem;
   --mb-2: 1rem;
   --mb-3: 1.5rem;
@@ -302,6 +302,7 @@ img {
   width: min(300px, 90vw);
   justify-self: center;
   border-radius: 5em;
+  opacity: 1;
 }
 /*========== BUTTONS ==========*/
 .button {
@@ -331,6 +332,19 @@ img {
   border-radius: 0.5rem;
   justify-self: center;
 }
+.about_initial {
+  text-align: center;
+}
+.swiper-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.8em;
+}
+.gallery-title {
+  color: var(--title-color);
+}
 
 /*========== SERVICES ==========*/
 .services__container {
@@ -346,7 +360,6 @@ img {
   align-items: center;
   row-gap: 1em;
 }
-
 
 .services__title {
   font-size: var(--h3-font-size);
@@ -381,6 +394,7 @@ img {
   width: 100px;
   align-self: center;
   margin-bottom: var(--mb-2);
+  height: 50%;
 }
 
 .menu__name,
@@ -438,9 +452,82 @@ img {
 .contact__container {
   text-align: center;
 }
+.contact {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .contact__description {
-  margin-bottom: var(--mb-3);
+  margin: var(--mb-3);
+}
+#Contact-Form {
+  background: transparent;
+  width: 80%;
+  text-align: center;
+  border-radius: 0.5em;
+
+  padding: 1em;
+}
+input {
+  font-size: 1em;
+  line-height: 1.7em;
+  padding: 0.3em 0.3em;
+  margin-bottom: 0.7em;
+  border-radius: 3em;
+  background: #f5faf969;
+
+  border: 2px solid rgb(129, 204, 191);
+}
+#Contact-Form p {
+  font-size: 1.5em;
+}
+#Contact-Form textarea {
+  width: min(90vw, 300px);
+  font-size: 1em;
+  padding: 0.3em;
+  margin-bottom: 0.7em;
+  background: #f5faf969;
+  border: 2px solid rgb(129, 204, 191);
+  height: 10em;
+}
+::placeholder {
+  opacity: 0.3;
+  font-family: "Open sans", sans-serif;
+}
+#Submit-Button {
+  font-size: 1em;
+  padding: 0.3em 0.5em;
+  font-family: "Nunito Sans", sans-serif;
+  background: linear-gradient(
+    to right,
+    rgb(46, 155, 42) 50%,
+    rgb(148, 218, 130) 50%
+  );
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  border-style: none;
+  color: black;
+  width: min(90vw, 300px);
+
+  border-radius: 0.3em;
+  padding: 0.8em 0;
+}
+#Submit-Button:hover {
+  cursor: pointer;
+  color: white;
+  background-position: left bottom;
+}
+.contact__data {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactus {
+  margin-bottom: -10px;
 }
 
 /*========== FOOTER ==========*/
@@ -458,13 +545,11 @@ img {
 .footer__description {
   display: block;
   font-size: var(--small-font-size);
-  margin: 0.25rem 0 var(--mb-3);
 }
 
 .footer__social {
   font-size: 1.5rem;
   color: var(--title-color);
-  margin-right: var(--mb-2);
 }
 
 .footer__title {
@@ -488,6 +573,11 @@ img {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
   margin-top: 3.5rem;
+}
+
+.instagram {
+  font-size: 3em;
+  align-self: center;
 }
 /*Carousel Items*/
 
@@ -571,6 +661,7 @@ img {
   }
   .menu__img {
     width: 130px;
+    height: 50%;
   }
 
   .app__store {
@@ -582,10 +673,6 @@ img {
   .bd-container {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .home__img {
-    width: 400px;
   }
 
   .about__container,
@@ -600,12 +687,6 @@ img {
   position: relative;
 }
 
-/* For tall screens on mobiles y desktop*/
-@media screen and (min-height: 721px) {
-  .home__container {
-    height: 640px;
-  }
-}
 @media screen and (max-width: 575px) {
   .button {
     padding: 0.75rem 1rem;
@@ -613,6 +694,15 @@ img {
     transition: 0.3s;
     font-size: 1.3em;
     text-align: center;
+  }
+  .menu__button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    padding: 0.625rem 0.813rem;
+    border-radius: 0.5rem 0 0.5rem 0;
+    font-size: min(1em, 3vw);
   }
   .home__data {
     display: flex;
@@ -646,5 +736,11 @@ img {
   }
   .data-container {
     z-index: 1;
+  }
+  .contact {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
   }
 }
