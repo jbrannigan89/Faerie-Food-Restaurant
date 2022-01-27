@@ -114,7 +114,7 @@ sr.reveal(
             .about__data, .about__img,
             .services__content, .menu__content,.contact-form,
             .app__data, .app__img,
-            .contact__data, .contact__button,.gallery-title
+            .contact__button,.gallery-title
             .footer__content, .swiper`,
   {
     interval: 200,
