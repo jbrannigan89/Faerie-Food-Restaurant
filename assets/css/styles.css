@@ -299,7 +299,7 @@ img {
 }
 
 .home__img {
-  width: min(300px, 90vw);
+  width: min(400px, 90vw);
   justify-self: center;
   border-radius: 5em;
   opacity: 1;
