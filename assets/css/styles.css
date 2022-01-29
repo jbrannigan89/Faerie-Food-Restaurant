@@ -14,16 +14,16 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --first-color: rgb(90, 203, 207);
-  --first-color-alt: #5f9be4;
+  --first-color: rgb(56, 141, 56);
+  --first-color-alt: rgb(69, 173, 69);
   --title-color: #393939;
   --text-color: #707070;
   --text-color-light: #a6a6a6;
   --body-color: #fbfefd;
   --container-color: #ffffff;
   --main-title: rgb(160, 23, 137);
-  --anna-title:rgb(41, 124, 41);
-  --anna-subtitle:rgb(23, 6, 70);
+  --anna-title: rgb(41, 124, 41);
+  --anna-subtitle: rgb(23, 6, 70);
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -82,7 +82,9 @@ body.dark-theme {
   --body-color: #1d2521;
   --container-color: #27302c;
   --main-title: rgb(199, 201, 78);
-  --anna-title: rgb(113, 224, 113);--anna-subtitle:rgb(214, 250, 247);
+  --anna-title: rgb(113, 224, 113);
+  --anna-subtitle: rgb(214, 250, 247);
+  --first-color: rgb(113, 224, 113);
 }
 
 /*========== Button Dark/Light ==========*/
