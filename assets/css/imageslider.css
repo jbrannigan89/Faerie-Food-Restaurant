@@ -14,28 +14,55 @@
 .swiper-button-next {
 }
 .slide1 {
-  background-image: url(../img/cinnrolls.jpeg);
+  background-image: url(../img/somesquarepics/cropped1.jpg);
 }
 .slide2 {
-  background-image: url(../img/flowercake.jpeg);
+  background-image: url(../img/somesquarepics/cropped2.jpg);
 }
 .slide3 {
-  background-image: url(../img/leafcake.jpeg);
+  background-image: url(../img/somesquarepics/cropped3.jpg);
 }
 .slide4 {
-  background-image: url(../img/mushroomcake.jpeg);
+  background-image: url(../img/somesquarepics/cropped4.jpg);
 }
 .slide5 {
-  background-image: url(../img/orangecake.jpeg);
+  background-image: url(../img/somesquarepics/cropped5.jpg);
 }
 .slide6 {
-  background-image: url(../img/purplecake.jpeg);
+  background-image: url(../img/somesquarepics/cropped7.jpg);
+}
+.slide7 {
+  background-image: url(../img/somesquarepics/cropped8.jpg);
+}
+.slide8 {
+  background-image: url(../img/somesquarepics/cropped9.jpg);
+}
+.slide9 {
+  background-image: url(../img/somesquarepics/cropped101.jpg);
+}
+.slide10 {
+  background-image: url(../img/somesquarepics/cropped102.jpg);
+}
+.slide11 {
+  background-image: url(../img/somesquarepics/cropped1011.jpg);
+}
+.slide12 {
+  background-image: url(../img/somesquarepics/cropped105.jpg);
+}
+.slide13 {
+  background-image: url(../img/somesquarepics/cropped106.jpg);
+}
+.slide14 {
+  background-image: url(../img/somesquarepics/cropped107.jpg);
+}
+.slide15 {
+  background-image: url(../img/somesquarepics/cropped1010.jpg);
 }
 
 @media screen and (max-width: 575px) {
   .swiper {
     width: 70vw;
-    height: 40vh;
+    height: 50vh;
     margin-top: 20px;
   }
   .swiper-slide {
