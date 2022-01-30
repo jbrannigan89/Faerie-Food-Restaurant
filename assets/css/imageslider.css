@@ -1,13 +1,14 @@
+
 .swiper {
-  width: max(30vw, 250px);
-  height: min(50vh, 300px);
+  width: 320px;
+  height: 320px;
 }
 .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat;
-  background-size: max(30vw, 250px) 50vh;
+  background-size: 320px 320px;
 }
 .swiper-button-prev {
 }
@@ -58,18 +59,23 @@
 .slide15 {
   background-image: url(../img/somesquarepics/cropped1010.jpg);
 }
-
-@media screen and (max-width: 575px) {
+@media (max-width: 870px) {.swiper {
+  width: 275px;
+  height: 275px;
+}
+.swiper-slide {
+ 
+  background-size: 275px 275px;
+}
+}
+@media (max-width: 575px) {
   .swiper {
     width: 70vw;
     height: 50vh;
     margin-top: 20px;
   }
   .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
+    
     background-size: 70vw 50vh;
   }
 }
