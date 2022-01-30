@@ -23,7 +23,7 @@
   --container-color: #ffffff;
   --main-title: rgb(160, 23, 137);
   --anna-title: rgb(41, 124, 41);
-  --anna-subtitle: rgb(23, 6, 70);
+  --anna-subtitle: rgb(7, 4, 14);
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -290,37 +290,6 @@ img {
   align-content: center;
 }
 
-/*    font-family: 'Asar', serif;
-
-   
-
-    
-
-   
-
-  
-
-    
-
-  
-
-    font-family: 'M PLUS 1 Code', sans-serif;
-
-    
-
-    font-family: 'Marcellus SC', serif;
-
-  
-
-    
-
-   
-
-    font-family: 'Montserrat', sans-serif;
-
-    font-family: 'Tangerine', cursive;
-
-    font-family: 'The Nautigal', cursive;*/
 .home__title {
   font-size: var(--biggest-font-size);
   color: var(--anna-title);
@@ -549,7 +518,6 @@ input {
   border-style: none;
   color: black;
   width: min(90vw, 300px);
-
   border-radius: 0.3em;
   padding: 0.8em 0;
 }
@@ -749,6 +717,9 @@ input {
   }
   .home__subtitle {
     text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    
   }
   .view-button {
     width: 60%;
